@@ -1,7 +1,7 @@
 const  chatList = document.querySelector(".chat-list");
 const  newChatForm = document.querySelector(".new-chat");
 const  newNameForm = document.querySelector(".new-name");
-const  updateMssg = document.querySelector(".update-mssg");
+const  updateMesg = document.querySelector(".update-mesg");
 const  rooms = document.querySelector(".chat-rooms");
 
 const chatUI = new ChatUI(chatList);
@@ -95,8 +95,8 @@ newNameForm.addEventListener("submit", e=>{
     const  newName = newNameForm.name.value.trim();
     chatroom.updateName(newName)
     newNameForm.name.value = "";
-    updateMssg.innerHTML = `Your name was updated to ${newName}`
-    setTimeout(() =>{updateMssg.innerHTML = ""},3000)
+    updateMesg.innerHTML = `Your name was updated to ${newName}`
+    setTimeout(() =>{updateMesg.innerHTML = ""},3000)
 
 })
 rooms.addEventListener("click", e=>{
